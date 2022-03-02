@@ -165,3 +165,6 @@ persist.vendor.radio.game_hand=1
 persist.vendor.sensor.onetrack=true
 persist.vendor.sensor.deviceorient=true
 persist.vendor.ssr.restart_level=ALL_ENABLE
+
+# USB
+vendor.usb.product_string=Xiaomi 13
