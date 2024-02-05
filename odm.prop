@@ -22,6 +22,9 @@ ro.vendor.audio.soundtrigger.sva-7.0=1
 vendor.audio.dolby.control.support=true
 ro.vendor.audio.shortvideo.index=80
 
+# Bluetooth
+bluetooth.device.default_name=Xiaomi 13
+
 # Camera
 ro.vendor.camera.interpolation.mialgo.support=true
 
