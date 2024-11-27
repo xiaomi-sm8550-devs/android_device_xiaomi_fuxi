@@ -20,4 +20,5 @@ PRODUCT_MODEL := Redmi K60 Pro
 PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := Xiaomi
 
-BUILD_FINGERPRINT := Redmi/socrates/socrates:14/UKQ1.230804.001/V816.0.11.0.UMKCNXM:user/release-keys
+PRODUCT_BUILD_PROP_OVERRIDES += \
+	BuildFingerprint=Xiaomi/socrates/miproduct:14/UKQ1.230804.001/V816.0.16.0.UMKCNXM:user/release-keys
