@@ -5,7 +5,7 @@
 //
 
 runtime_resource_overlay {
-    name: "LineageSdkOverlaySocrates",
+    name: "LineageSdkOverlayFuxi",
     sdk_version: "current",
     vendor: true,
 }

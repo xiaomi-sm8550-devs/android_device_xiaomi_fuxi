@@ -174,7 +174,7 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init/init.socrates.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.socrates.rc \
+    $(LOCAL_PATH)/init/init.fuxi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fuxi.rc \
     $(LOCAL_PATH)/init/init.recovery.qcom.rc:recovery/root/init.recovery.qcom.rc
 
 # IPA
@@ -240,13 +240,13 @@ PRODUCT_COPY_FILES += \
 
 # Overlay
 PRODUCT_PACKAGES += \
-    ApertureOverlaySocrates \
-    CarrierConfigOverlaySocrates \
-    FrameworkResOverlaySocrates \
-    LineageSdkOverlaySocrates \
-    SystemUIOverlaySocrates \
-    SettingsOverlaySocrates \
-    TelephonyOverlaySocrates
+    ApertureOverlayFuxi \
+    CarrierConfigOverlayFuxi \
+    FrameworkResOverlayFuxi \
+    LineageSdkOverlayFuxi \
+    SystemUIOverlayFuxi \
+    SettingsOverlayFuxi \
+    TelephonyOverlayFuxi
 
 # Power
 PRODUCT_PACKAGES += \
@@ -356,7 +356,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.usb.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.host.xml
 
 # Vendor configurations
-$(call inherit-product, vendor/xiaomi/socrates/socrates-vendor.mk)
+$(call inherit-product, vendor/xiaomi/fuxi/fuxi-vendor.mk)
 
 # Vendor service manager
 PRODUCT_PACKAGES += \

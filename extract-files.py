@@ -24,7 +24,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/xiaomi/socrates',
+    'device/xiaomi/fuxi',
     'hardware/qcom-caf/wlan',
     'hardware/qcom-caf/sm8550',
     'hardware/xiaomi',
@@ -105,7 +105,7 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'socrates',
+    'fuxi',
     'xiaomi',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
