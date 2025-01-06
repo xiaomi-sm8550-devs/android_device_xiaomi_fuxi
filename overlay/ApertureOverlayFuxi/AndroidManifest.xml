@@ -1,8 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.lineageos.telephonyoverlay.socrates">
+    package="org.lineageos.apertureoverlay.fuxi">
     <application android:hasCode="false" />
     <overlay android:isStatic="true"
              android:priority="1"
-             android:targetPackage="com.android.phone"
-             android:targetName="SocratesFrameworkResOverlay" />
+             android:targetPackage="org.lineageos.aperture"
+             android:targetName="FuxiApertureOverlay" />
 </manifest>

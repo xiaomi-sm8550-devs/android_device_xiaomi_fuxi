@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "UdfpsHandler.xiaomi_socrates"
+#define LOG_TAG "UdfpsHandler.xiaomi_sm8550"
 
 #include <android-base/logging.h>
 #include <android-base/unique_fd.h>
@@ -42,7 +42,7 @@ static void set(const std::string& path, const T& value) {
 
 }  // anonymous namespace
 
-class XiaomiSocratesUdfpsHander : public UdfpsHandler {
+class XiaomiSm8550UdfpsHander : public UdfpsHandler {
   public:
     void init(fingerprint_device_t* device) {
         mDevice = device;
@@ -104,7 +104,7 @@ class XiaomiSocratesUdfpsHander : public UdfpsHandler {
 };
 
 static UdfpsHandler* create() {
-    return new XiaomiSocratesUdfpsHander();
+    return new XiaomiSm8550UdfpsHander();
 }
 
 static void destroy(UdfpsHandler* handler) {
