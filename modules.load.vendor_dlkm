@@ -121,14 +121,11 @@ usbmon.ko
 repeater-qti-pmic-eusb2.ko
 repeater-i2c-eusb2.ko
 nb7vpq904m.ko
-xiaomi_touch.ko
-goodix_core.ko
 pm8941-pwrkey.ko
 mtdoops.ko
 mtd.ko
 qcom-hv-haptics.ko
 qti_battery_charger.ko
-goodix_fod.ko
 i2c-msm-geni.ko
 i3c-master-msm-geni.ko
 ir-spi.ko
@@ -280,6 +277,10 @@ pinctrl_lpi_dlkm.ko
 qcrypto-msm_dlkm.ko
 ipa_clientsm.ko
 rmnet_shs.ko
+cameralog.ko
 wcd939x_slave_dlkm.ko
 radio-i2c-rtc6226-qca.ko
 ipanetm.ko
+cs35l41_dlkm
+goodix_fod.ko
+fts_touch_spi.ko

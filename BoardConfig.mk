@@ -59,7 +59,7 @@ $(call soong_config_set, android_hardware_audio, run_64bit, true)
 TARGET_NO_BOOTLOADER := true
 
 # Display
-TARGET_SCREEN_DENSITY := 540
+TARGET_SCREEN_DENSITY := 440
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
@@ -129,7 +129,9 @@ BOOT_KERNEL_MODULES += \
     gpr_dlkm.ko \
     spf_core_dlkm.ko \
     adsp_loader_dlkm.ko \
-    qti_battery_charger.ko
+    qti_battery_charger.ko \
+    fts_touch_spi.ko
+    
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load.vendor_dlkm))
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load.first_stage))
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD  := $(strip $(shell cat $(DEVICE_PATH)/modules.load.recovery))
@@ -163,9 +165,6 @@ BOARD_ROOT_EXTRA_SYMLINKS += /lib/modules:/vendor/lib/modules
 # Platform
 TARGET_BOARD_PLATFORM := kalama
 TARGET_BOOTLOADER_BOARD_NAME := kalama
-
-# Power
-TARGET_TAP_TO_WAKE_NODE := /sys/devices/platform/goodix_ts.0/double_tap_enable
 
 # Recovery
 BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
