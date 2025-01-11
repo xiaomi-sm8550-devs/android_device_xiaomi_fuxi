@@ -199,7 +199,7 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     vendor/lineage/config/device_framework_matrix.xml
 DEVICE_MANIFEST_FILE := \
     $(DEVICE_PATH)/configs/vintf/manifest_kalama.xml \
-    $(DEVICE_PATH)/configs/vintf/manifest_socrates.xml
+    $(DEVICE_PATH)/configs/vintf/manifest_fuxi.xml
 
 # Vendor security patch
 VENDOR_SECURITY_PATCH := 2024-12-01
