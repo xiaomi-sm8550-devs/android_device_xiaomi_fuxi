@@ -1440,8 +1440,8 @@ vendor/lib64/libtestutils.so
 vendor/lib64/libtinyxml2_1.so
 vendor/lib64/libvmfilexfer.so
 
-# Display (SDM)
-vendor/lib64/libsdm-color.so
+# Display (SDM) - from  rtwo_g-user 14 U1TR34.8-30-13-2-2 5b4b0d-dde58 release-keys
+vendor/lib64/libsdm-color.so|c36b857c03f1ac8e89882fd59812ae501e4c9772
 
 # Display calibration data
 odm/etc/df_default.xml
